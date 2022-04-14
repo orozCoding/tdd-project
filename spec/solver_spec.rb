@@ -32,27 +32,26 @@ describe Solver do
     end
   end
 
-    context 'when calling method fizzbuzz with an integr n' do
-      
-      it 'when n divisible by 3 should return "fizz"' do
-        solver = Solver.new
-        expect(solver.fizzbuzz(3)).to eq 'fizz'
-      end
+  context 'when calling method fizzbuzz with an integr n' do
 
-      it 'when n divisible by 5 should return "buzz"' do
-        solver = Solver.new
-        expect(solver.fizzbuzz(5)).to eq 'buzz'
-      end
+    it 'when n divisible by 3 should return "fizz"' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(3)).to eq 'fizz'
+    end
 
-      it 'when n divisible by 3 and 5 should return "fizzbuzz"' do
-        solver = Solver.new
-        expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
-      end
+    it 'when n divisible by 5 should return "buzz"' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(5)).to eq 'buzz'
+    end
 
-      it 'when n not divisible neither by 3 or by 5 should return "n"' do
-        solver = Solver.new
-        expect(solver.fizzbuzz(7)).to eq '7'
-      end
+    it 'when n divisible by 3 and 5 should return "fizzbuzz"' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+
+    it 'when n not divisible neither by 3 or by 5 should return "n"' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(7)).to eq '7'
     end
   end
 end
