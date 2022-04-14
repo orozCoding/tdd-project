@@ -20,8 +20,7 @@ describe Solver do
 
     it 'should raise an exception if a negative integer is given' do
       solver = Solver.new
-      factorial = solver.factorial(-1)
-      expect { factorial }.to raise_error
+      expect { solver.factorial(-1) }.to raise_error
     end
   end
 
