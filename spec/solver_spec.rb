@@ -9,7 +9,7 @@ describe Solver do
       factorial3 = solver.factorial(9)
       expect(factorial1).to eq 120
       expect(factorial2).to eq 2
-      expect(factorial3).to eq 362880
+      expect(factorial3).to eq 362_880
     end
 
     it 'should return 1 when using 0 as the argument' do
@@ -22,6 +22,13 @@ describe Solver do
       solver = Solver.new
       factorial = solver.factorial(-1)
       expect { factorial }.to raise_error
+    end
+  end
+
+  context 'when calling method reverse with string "str"' do
+    it 'should return a reversed string of "str"' do
+      solver = Solver.new
+      expect(solver.reverse('hello')).to eq 'olleh'
     end
   end
 end
