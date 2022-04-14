@@ -32,7 +32,6 @@ describe Solver do
   end
 
   context 'when calling method fizzbuzz with an integr n' do
-
     it 'when n divisible by 3 should return "fizz"' do
       solver = Solver.new
       expect(solver.fizzbuzz(3)).to eq 'fizz'
