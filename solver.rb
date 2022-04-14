@@ -12,4 +12,8 @@ class Solver
 
     factorial
   end
+
+  def reverse(str)
+    str.reverse
+  end
 end
